@@ -6,6 +6,7 @@
 <title>Official Visiting Card | Seema Pujani</title>
 
 <style>
+/* ===== Page ===== */
 body{
     margin:0;
     min-height:100vh;
@@ -18,8 +19,8 @@ body{
 
 /* ===== Card ===== */
 .card{
-    max-width:720px;   /* FIXED */
-    width:95%;         /* Responsive */
+    max-width:720px;
+    width:95%;
     background:white;
     border-radius:14px;
     box-shadow:0 12px 30px rgba(0,0,0,0.15);
@@ -59,32 +60,33 @@ body{
     line-height:1.6;
     color:#333;
 
-    /* TEXT CUT FIX */
-  
+    /* ⭐ MAIN FLEXBOX FIX */
+    min-width:0;
+
+    /* text wrap fix */
+    word-break: break-word;
+    overflow-wrap:anywhere;
 }
 
 /* ===== Sections ===== */
+.section{
+    margin-bottom:12px;
+    white-space:normal;
+}
+
+/* ===== Titles ===== */
 .title{
     font-weight:bold;
     color:#0b3d91;
     margin-bottom:6px;
-    overflow-wrap: break-word;
-}
-
-.section{
-    margin-bottom:12px;
-    white-space: normal;
-   overflow-wrap: break-word;
-
 }
 
 /* ===== Button ===== */
 .btn{
     display:inline-block;
-    margin-top:10px;
-    padding:8px 14px;
-    /* background:#0b3d91; */
-    background: red;
+    margin-top:12px;
+    padding:9px 16px;
+    background:#0b3d91;
     color:white;
     text-decoration:none;
     border-radius:6px;
@@ -103,8 +105,10 @@ body{
         flex-direction:column;
     }
 
-    .left, .right{
+    .left,
+    .right{
         width:100%;
+        min-width:0;
     }
 }
 </style>
@@ -116,14 +120,14 @@ body{
 
     <div class="left">
         <h1>Seema Pujani</h1>
-        <h3>Deputy Secretary (D&ISA)</h3>
+        <h3>Deputy Secretary (D&amp;ISA)</h3>
     </div>
 
     <div class="right">
 
         <div class="section">
             <div class="title">Division</div>
-            Disarmament & International Security Affairs Division
+            Disarmament &amp; International Security Affairs Division
         </div>
 
         <div class="section">
