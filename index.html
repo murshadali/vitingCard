@@ -2,133 +2,82 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Official Visiting Card | Seema Pujani</title>
 
 <style>
+
 /* ===== Page ===== */
 body{
     margin:0;
-    min-height:100vh;
+    font-family: Arial, sans-serif;
+    background:#f2f4f8;
     display:flex;
     justify-content:center;
-    align-items:center;
-    font-family:'Segoe UI', Arial, sans-serif;
-    background:#f2f4f8;
+    padding:20px;
 }
-
-/* Make sizing predictable when using padding + percent widths */
-*, *::before, *::after{
-    box-sizing: border-box;
-} 
 
 /* ===== Card ===== */
 .card{
-    max-width:720px;
-    width:95%;
+    max-width:500px;      /* smaller = better mobile */
+    width:100%;
     background:white;
     border-radius:14px;
     box-shadow:0 12px 30px rgba(0,0,0,0.15);
-    display:flex;
-    overflow:visible; /* allow wrapped content to remain visible on small screens */
-} 
+    overflow:hidden;
+}
 
-/* ===== Left Side ===== */
-.left{
+/* ===== Header ===== */
+.header{
     background:#0b3d91;
     color:white;
-    padding:30px;
-    flex: 0 0 38%;
-    width:38%;
-    max-width:38%;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-} 
-
-.left h1{
-    margin:0;
-    font-size:24px;
-    letter-spacing:1px;
+    padding:25px;
 }
 
-.left h3{
-    margin-top:8px;
+.header h1{
+    margin:0;
+    font-size:22px;
+}
+
+.header h3{
+    margin-top:6px;
     font-weight:normal;
     font-size:14px;
-    opacity:0.9;
 }
 
-/* ===== Right Side ===== */
-.right{
-    padding:28px 30px;
-    width:62%;
+/* ===== Content ===== */
+.content{
+    padding:20px;
     font-size:14px;
     line-height:1.6;
-    color:#333;
 
-    /* ⭐ MAIN FLEXBOX FIX */
-    min-width:0;
-
-    /* text wrap fixes (cross-browser) */
-    -webkit-hyphens: auto;    /* iOS Safari */
-    -ms-word-break: break-word; /* IE/Edge */
+    /* ⭐ FORCE WRAP (main fix) */
     word-break: break-word;
-    word-wrap: break-word;     /* legacy */
-    overflow-wrap: break-word; /* modern */
-    overflow-wrap: anywhere;   /* stronger: allow breaks anywhere if needed */
-    hyphens: auto;
+    overflow-wrap:anywhere;
 }
 
-/* Ensure paragraphs wrap normally and don't get clipped */
-.right p{
-    white-space:normal;
-    margin:0;
-}
-
-/* ===== Sections ===== */
+/* ===== Section ===== */
 .section{
-    margin-bottom:12px;
-    white-space:normal;
+    margin-bottom:14px;
 }
 
-/* ===== Titles ===== */
 .title{
     font-weight:bold;
     color:#0b3d91;
-    margin-bottom:6px;
+    margin-bottom:4px;
 }
 
 /* ===== Button ===== */
 .btn{
     display:inline-block;
-    margin-top:12px;
-    padding:9px 16px;
     background:#0b3d91;
     color:white;
-    text-decoration:none;
+    padding:10px 16px;
     border-radius:6px;
-    font-size:13px;
+    text-decoration:none;
+    margin-top:8px;
 }
 
-/* ===== Mobile Responsive ===== */
-@media(max-width:750px){
-
-    body{
-        padding:20px 0;
-        align-items:flex-start;
-    }
-
-    .card{
-        flex-direction:column;
-    }
-
-    .left,
-    .right{
-        width:100%;
-        min-width:0;
-    }
-}
 </style>
 </head>
 
@@ -136,16 +85,16 @@ body{
 
 <div class="card">
 
-    <div class="left">
+    <div class="header">
         <h1>Seema Pujani</h1>
-        <h3>Deputy Secretary (D&amp;ISA)</h3>
+        <h3>Deputy Secretary (D&ISA)</h3>
     </div>
 
-    <div class="right">
+    <div class="content">
 
         <div class="section">
             <div class="title">Division</div>
-            <p>Disarmament &amp; International Security Affairs Division</p>
+            Disarmament & International Security Affairs Division
         </div>
 
         <div class="section">
