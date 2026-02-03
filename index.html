@@ -17,6 +17,11 @@ body{
     background:#f2f4f8;
 }
 
+/* Make sizing predictable when using padding + percent widths */
+*, *::before, *::after{
+    box-sizing: border-box;
+} 
+
 /* ===== Card ===== */
 .card{
     max-width:720px;
@@ -33,11 +38,13 @@ body{
     background:#0b3d91;
     color:white;
     padding:30px;
+    flex: 0 0 38%;
     width:38%;
+    max-width:38%;
     display:flex;
     flex-direction:column;
     justify-content:center;
-}
+} 
 
 .left h1{
     margin:0;
