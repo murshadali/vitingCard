@@ -63,9 +63,13 @@ body{
     /* ⭐ MAIN FLEXBOX FIX */
     min-width:0;
 
-    /* text wrap fix */
+    /* text wrap fixes (cross-browser) */
+    -webkit-hyphens: auto;    /* iOS Safari */
+    -ms-word-break: break-word; /* IE/Edge */
     word-break: break-word;
-    overflow-wrap:anywhere;
+    word-wrap: break-word;     /* legacy */
+    overflow-wrap: break-word; /* modern */
+    hyphens: auto;
 }
 
 /* ===== Sections ===== */
