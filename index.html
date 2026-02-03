@@ -60,8 +60,7 @@ body{
     color:#333;
 
     /* TEXT CUT FIX */
-    overflow-wrap: break-word;
-    word-break: break-word;
+  
 }
 
 /* ===== Sections ===== */
@@ -74,6 +73,9 @@ body{
 
 .section{
     margin-bottom:12px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap:anywhere;
 }
 
 /* ===== Button ===== */
@@ -81,8 +83,8 @@ body{
     display:inline-block;
     margin-top:10px;
     padding:8px 14px;
-    /* background:#0b3d91; */
-    background: red;
+    background:#0b3d91;
+    /* background: red; */
     color:white;
     text-decoration:none;
     border-radius:6px;
