@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Official Visiting Card | Seema Pujani</title>
+
+<style>
+    body{
+        margin:0;
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background:#f2f4f8;
+    }
+
+    .card{
+        width:720px;
+        background:white;
+        border-radius:14px;
+        box-shadow:0 12px 30px rgba(0,0,0,0.15);
+        display:flex;
+        overflow:hidden;
+    }
+
+    .left{
+        background:#0b3d91;
+        color:white;
+        padding:30px;
+        width:38%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    .left h1{
+        margin:0;
+        font-size:24px;
+        letter-spacing:1px;
+    }
+
+    .left h3{
+        margin-top:8px;
+        font-weight:normal;
+        font-size:14px;
+        opacity:0.9;
+    }
+
+    .right{
+        padding:28px 30px;
+        width:62%;
+        font-size:14px;
+        line-height:1.6;
+        color:#333;
+    }
+
+    .title{
+        font-weight:bold;
+        color:#0b3d91;
+        margin-bottom:6px;
+    }
+
+    .section{
+        margin-bottom:10px;
+    }
+
+    .btn{
+        display:inline-block;
+        margin-top:10px;
+        padding:8px 14px;
+        background:#0b3d91;
+        color:white;
+        text-decoration:none;
+        border-radius:6px;
+        font-size:13px;
+    }
+
+    @media(max-width:750px){
+        .card{
+            flex-direction:column;
+            width:95%;
+        }
+        .left, .right{
+            width:100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="left">
+        <h1>Seema Pujani</h1>
+        <h3>Deputy Secretary (D&ISA)</h3>
+    </div>
+
+    <div class="right">
+
+        <div class="section">
+            <div class="title">Division</div>
+            Disarmament & International Security Affairs Division
+        </div>
+
+        <div class="section">
+            <div class="title">Ministry</div>
+            Ministry of External Affairs<br>
+            Government of India
+        </div>
+
+        <div class="section">
+            <div class="title">Address</div>
+            Room No. 3046, Jawaharlal Nehru Bhawan,<br>
+            New Delhi – 110011
+        </div>
+
+        <div class="section">
+            <div class="title">Contact</div>
+            📞 <a href="tel:01123086687">011 23086687</a><br>
+            ✉ <a href="mailto:dirdisa@mea.gov.in">dirdisa@mea.gov.in</a>
+        </div>
+
+        <a class="btn" href="mailto:dirdisa@mea.gov.in">Send Email</a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
